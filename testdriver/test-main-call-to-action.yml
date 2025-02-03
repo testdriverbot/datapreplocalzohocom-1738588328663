@@ -1,0 +1,29 @@
+version: 4.1.58
+session: 67a0c2afbd730579c19cdef5
+steps:
+  - prompt: Bypass the security warning.
+    commands:
+      - command: hover-text
+        text: Advanced
+        description: advanced options link on the security warning page
+        action: click
+  - prompt: Bypass the security warning.
+    commands:
+      - command: hover-text
+        text: Proceed to dataprep.localzoho.com (unsafe)
+        description: proceed to the site link on the security warning page
+        action: click
+  - prompt: Bypass the security warning.
+    commands:
+      - command: hover-text
+        text: Proceed to dataprep.localzoho.com (unsafe)
+        description: proceed to the site link on the security warning page
+        action: click
+  - prompt: Assert that the main call to action button is visible on the homepage.
+    commands: []
+  - prompt: Click the main call to action button.
+    commands: []
+  - prompt: >-
+      Assert that the click leads to the correct page or section.  # Use the
+      content of the file from the environment
+    commands: []
