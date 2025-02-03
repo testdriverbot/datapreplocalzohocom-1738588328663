@@ -1,0 +1,15 @@
+version: 4.1.58
+session: 67a0c2b200d2422e7000ad6a
+steps:
+  - prompt: Bypass the security warning.
+    commands:
+      - command: hover-text
+        text: Advanced
+        description: advanced button on the security warning page
+        action: click
+  - prompt: Bypass the security warning.
+    commands:
+      - command: hover-text
+        text: Proceed to datprep.localzoho.com (unsafe)
+        description: proceed link to bypass the security warning
+        action: click
