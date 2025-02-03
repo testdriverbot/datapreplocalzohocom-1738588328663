@@ -1,0 +1,27 @@
+version: 4.1.58
+session: 67a0c2acbd730579c19cdef3
+steps:
+  - prompt: Bypass the security warning.
+    commands:
+      - command: hover-text
+        text: Advanced
+        description: advanced button on the security warning page
+        action: click
+  - prompt: Bypass the security warning.
+    commands:
+      - command: hover-text
+        text: Proceed to dataprep.localzoho.com (unsafe)
+        description: proceed to the unsafe site link on the security warning page
+        action: click
+  - prompt: Scroll down to the footer of the webpage.
+    commands:
+      - command: scroll
+        direction: down
+        method: keyboard
+        amount: 300
+  - prompt: Click on each footer link.
+    commands: []
+  - prompt: >-
+      Assert that each link navigates to the expected page without errors.  #
+      Use the content of the file from the environment
+    commands: []
